@@ -1,0 +1,41 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 !important;
+    margin: -10px !important;
+  }
+
+  body {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+  
+  .main-body {
+    display: flex;
+    flex: 1;
+    background-color: black; 
+
+  }
+  
+  .sidebar {
+    width: 200px; 
+    background-color: black; 
+    z-index: 10;
+  }
+  
+  .content {
+    flex: 1;
+    overflow-y: auto; /* Allow the content area to scroll if content overflows */
+    /* padding: 20px; */
+    /* overflow-y: auto;  */
+  }
+
+  .footer {
+    background-color: black; /* Adjust the footer background color as needed */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0; /* Ensure the footer doesn't shrink */
+  }
+  

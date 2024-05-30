@@ -1,0 +1,21 @@
+/* Sidebar.css */
+.sidebar {
+    background-color: #333; 
+    color: white;
+    width: 60px; 
+    height: 92vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+.menu-item {
+    cursor: pointer; 
+}
+
+.menu-item > svg {
+    width: 30px; 
+    height: 20px; 
+}

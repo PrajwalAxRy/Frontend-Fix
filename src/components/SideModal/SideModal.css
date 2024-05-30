@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.side-modal {
+  width: 25%;
+  min-width: 270px;
+  position: fixed;
+  right: 0; 
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #333;
+  color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.side-modal.open {
+  transform: translateX(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4c4c4c;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 1;
+  color: white;
+}
+
+.modal-content {
+  padding: 0px 10px;
+  padding-top: 0px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.backgroundColor {
+  background: #333;
+}
+
+#selected-flow {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background: #333; 
+  color: #fff; 
+  border: 2px solid #ffffff; 
+  border-radius: 6px; 
+  appearance: none; 
+}
+
+#selected-flow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M10.6%200.6L6%205.2%201.4%200.6%200%202l6%206%206-6-1.4-1.4z%22%20fill%3D%22%23fff%22%3E%3C/path%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-color: #333;
+}
+
+#selected-flow option {
+  background: #333;
+  color: #fff; 
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.dependencies {
+  background: #333; 
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+}
+
+.ptext {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.fontright {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+}
+
+.justfont {
+  font-family: 'Mulish', sans-serif;
+}
+
+.dependency-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dependency {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(58, 147, 250);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dependency-icon {
+  margin-left: auto; 
+  color: orange; 
+}
+
+fieldset {
+  border: 1px solid #666;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+legend {
+  color: white;
+  padding: 0 5px;
+  background-color: #333;
+  border: none;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+label {
+  cursor: pointer;
+  user-select: none; 
+}
+
+.database-config input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.modal-footer {
+  margin-left: -9px;
+  margin-right: 10px;
+  padding: 10px;
+  background: #333;
+  position: fixed;
+  bottom: 0;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #4c4c4c;
+  z-index: 10;
+}
+
+
